@@ -62,8 +62,7 @@ router.post('/',
     async (req: Request, res: Response) => {
     const caption = req.body.caption;
     const fileName = req.body.url;
-    console.log(fileName);
-    console.log(process.env.FILESTORE_MEDIA_BUCKET);
+
 
     // check Caption is valid
     if (!caption) {
